@@ -1,0 +1,15 @@
+PODS:
+  - Toast (3.1.0)
+  - WechatOpenSDK (1.7.9)
+
+DEPENDENCIES:
+  - Toast
+  - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  WechatOpenSDK: 1fe7e3b07db860d6a936c3ff4a5aba6b890958d9
+
+PODFILE CHECKSUM: 532615ec06fcfef856c1c50ca25b5b0b331be983
+
+COCOAPODS: 1.2.0
