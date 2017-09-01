@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zc2-E7-Zvh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--青训-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="youth" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="youthVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShU-RR-hov">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ShU-RR-hov" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EfJ-lA-p7X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ShU-RR-hov" secondAttribute="bottom" id="FJu-zS-fQ1"/>
+                            <constraint firstItem="ShU-RR-hov" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="JYi-AI-WWt"/>
+                            <constraint firstAttribute="trailing" secondItem="ShU-RR-hov" secondAttribute="trailing" id="Vcd-p6-DE1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="青训" id="0K0-mc-g2O"/>
+                    <connections>
+                        <outlet property="contentSrcView" destination="ShU-RR-hov" id="OTJ-fE-9wW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3863" y="2354"/>
+        </scene>
+        <!--青训-->
+        <scene sceneID="RH1-1V-cQq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SeS-19-J2I" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="青训" id="qFa-lk-zL7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EJt-3N-u3J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9P7-cb-HFt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wm-OE-3Ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3863" y="1633"/>
+        </scene>
+        <!--数苗足球-->
+        <scene sceneID="cWf-1a-Vej">
+            <objects>
+                <viewController storyboardIdentifier="infor" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jUx-vv-NrR" customClass="inforVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p0q-TB-vgt"/>
+                        <viewControllerLayoutGuide type="bottom" id="t7E-Kz-ux6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2mm-v2-sIw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaL-xT-Kvr">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="DaL-xT-Kvr" firstAttribute="leading" secondItem="2mm-v2-sIw" secondAttribute="leading" id="HHU-pv-Jo2"/>
+                            <constraint firstItem="t7E-Kz-ux6" firstAttribute="top" secondItem="DaL-xT-Kvr" secondAttribute="bottom" id="Nqf-BY-4uB"/>
+                            <constraint firstItem="DaL-xT-Kvr" firstAttribute="top" secondItem="p0q-TB-vgt" secondAttribute="bottom" constant="44" id="bCY-am-PcB"/>
+                            <constraint firstAttribute="trailing" secondItem="DaL-xT-Kvr" secondAttribute="trailing" id="nGM-EI-Zfx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="数苗足球" id="9IQ-87-loB"/>
+                    <connections>
+                        <outlet property="contentSrcView" destination="DaL-xT-Kvr" id="6Mc-qd-bWl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmm-aa-G4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4519" y="2354"/>
+        </scene>
+        <!--赛事-->
+        <scene sceneID="67M-ym-nD5">
+            <objects>
+                <viewController storyboardIdentifier="match" useStoryboardIdentifierAsRestorationIdentifier="YES" id="chf-ik-BVb" customClass="matchVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gst-Z2-L7N"/>
+                        <viewControllerLayoutGuide type="bottom" id="kln-u3-3Ma"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D4d-s5-jp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xug-bJ-Gxd">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xug-bJ-Gxd" firstAttribute="leading" secondItem="D4d-s5-jp3" secondAttribute="leading" id="AFN-E9-kvh"/>
+                            <constraint firstItem="xug-bJ-Gxd" firstAttribute="top" secondItem="gst-Z2-L7N" secondAttribute="bottom" constant="44" id="FLC-8D-XCK"/>
+                            <constraint firstItem="kln-u3-3Ma" firstAttribute="top" secondItem="xug-bJ-Gxd" secondAttribute="bottom" id="Zqj-1R-f5U"/>
+                            <constraint firstAttribute="trailing" secondItem="xug-bJ-Gxd" secondAttribute="trailing" id="xcf-fX-wFZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="赛事" id="kzm-m6-cab"/>
+                    <connections>
+                        <outlet property="contentScrView" destination="xug-bJ-Gxd" id="DB0-Zo-jP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjy-UR-wlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3124" y="2346"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="0Z8-KQ-r9D">
+            <objects>
+                <viewController storyboardIdentifier="me" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1hV-Gf-rvx" customClass="meVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MDN-Ck-Utm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qv4-Ld-Yq4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bve-Uu-knM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的" id="ukD-r5-2db"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yn6-8f-fz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2314" y="2354"/>
+        </scene>
+        <!--资讯-->
+        <scene sceneID="1kp-Gk-lx2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nsV-nt-kzR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="资讯" id="la0-Gg-t96"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="foX-Di-wx9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jUx-vv-NrR" kind="relationship" relationship="rootViewController" id="dpQ-DD-5RU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uA5-YI-Pcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4518" y="1634"/>
+        </scene>
+        <!--Root TabVC-->
+        <scene sceneID="spG-va-Iny">
+            <objects>
+                <tabBarController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zc2-E7-Zvh" customClass="RootTabVC" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="h6T-42-whn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nsV-nt-kzR" kind="relationship" relationship="viewControllers" id="JC3-XE-J5L"/>
+                        <segue destination="SeS-19-J2I" kind="relationship" relationship="viewControllers" id="zKw-pD-rWV"/>
+                        <segue destination="3ug-ds-BQZ" kind="relationship" relationship="viewControllers" id="y1r-jG-9RM"/>
+                        <segue destination="PRT-y0-xUL" kind="relationship" relationship="viewControllers" id="OiI-Kd-43c"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkx-hP-9vG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4519" y="587"/>
+        </scene>
+        <!--赛事-->
+        <scene sceneID="H6i-lI-GEf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ug-ds-BQZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="赛事" id="hgI-G2-hu4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyy-aG-T0h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="chf-ik-BVb" kind="relationship" relationship="rootViewController" id="aLx-33-vIo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Og-UI-tbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3124" y="1630"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="dJS-ET-PfZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PRT-y0-xUL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" id="rXf-dx-TYq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Inu-Mp-u3U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1hV-Gf-rvx" kind="relationship" relationship="rootViewController" id="n0B-qA-Sti"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQe-qc-Xjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2313" y="1631"/>
+        </scene>
+    </scenes>
+</document>
